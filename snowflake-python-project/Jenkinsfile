@@ -18,7 +18,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/manjunathbabur/POC_PROJECT/snowflake-python-project.git'
+                git branch: 'main', url: 'https://github.com/manjunathbabur/POC_PROJECT.git'
             }
         }
 
