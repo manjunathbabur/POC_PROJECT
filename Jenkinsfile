@@ -7,7 +7,7 @@ pipeline {
         SNOWFLAKE_ACCOUNT = 'POC_ITIM'
         SNOWFLAKE_DATABASE = 'POC_CICD_PY'
         SNOWFLAKE_WAREHOUSE = 'POC_ITIM_PERIASAMY'
-        EMAIL_RECIPIENTS = 'manjunathbabur88@gmail.com'
+        //EMAIL_RECIPIENTS = 'manjunathbabur88@gmail.com'
     }
 
     parameters {
@@ -60,16 +60,5 @@ pipeline {
         }
     }
 
-    post {
-        success {
-            mail to: "$EMAIL_RECIPIENTS",
-                 subject: "Pipeline Success: Snowflake Python Project",
-                 body: "The pipeline has successfully completed."
-        }
-        failure {
-            mail to: "$EMAIL_RECIPIENTS",
-                 subject: "Pipeline Failed: Snowflake Python Project",
-                 body: "The pipeline failed. Please check the logs."
-        }
-    }
+   
 }
