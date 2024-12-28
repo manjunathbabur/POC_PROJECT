@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        SNOWFLAKE_USER = credentials('mrajamani')  // Jenkins credentials
-        SNOWFLAKE_PASSWORD = credentials('Muruga@20608')
+        SNOWFLAKE_USER = 'mrajamani' // Jenkins credentials
+        SNOWFLAKE_PASSWORD ='Muruga@20608'
         SNOWFLAKE_ACCOUNT = 'POC_ITIM'
         SNOWFLAKE_DATABASE = 'POC_CICD_PY'
         SNOWFLAKE_WAREHOUSE = 'POC_ITIM_PERIASAMY'
